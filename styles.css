@@ -1,1 +1,35 @@
 /*  your css code here. If applicable */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.panel {
+    cursor: pointer;
+    overflow: hidden;
+    transition: width 0.3s ease, height 0.3s ease;
+    width: 200px;
+    height: 300px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.panel.active {
+    width: 400px;
+    height: 600px;
+}
+
+.panel img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img-text {
+    padding: 10px;
+    background-color: #fff;
+}
